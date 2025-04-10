@@ -15,9 +15,15 @@ public:
     void setHandler(A h);
    int getFollowers(){return followerCount;}
    int getFollowed(){return followedCount;}
-   void setFollwers(int followers){followerCount=followers;}
+   void setFollowers(int followers){followerCount=followers;}
    bool isPriv();
-   bool setPriv(bool p);
+   void setPriv(bool p);
+
+   void displayFollowers();
+   void displayFollowed();
+
+   void addFollower(A user);
+   void addFollowed(A user);
 
 
 private:
@@ -26,5 +32,5 @@ int followerCount, followedCount;
 bool privAcc;
 
 };
-
+#include "SocialMediaAccount.cpp"
 #endif //NYEW_HW4_Q1_SOCIALMEDIAACCOUNT_H
