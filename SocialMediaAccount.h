@@ -3,10 +3,27 @@
 
 #include <iostream>
 using namespace std;
+//const global, size of array
+const int maxFollowers= 100;
+const int maxFollowed=100;
 template <class A>
 class SocialMediaAccount{
 public:
+    SocialMediaAccount(A handle=A(), bool privAcc=true);
+
+    A getHandler();
+    void setHandler(A h);
+   int getFollowers(){return followerCount;}
+   int getFollowed(){return followedCount;}
+   void setFollwers(int followers){followerCount=followers;}
+   bool isPriv();
+   bool setPriv(bool p);
+
+
 private:
+    A handler,followers[maxFollowers], followed[maxFollowed];
+int followerCount, followedCount;
+bool privAcc;
 
 };
 
