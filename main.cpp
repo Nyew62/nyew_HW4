@@ -6,7 +6,7 @@
 ** Usage : No command line arguments
 **
 ** Problem:
-
+displaying different social media accounts using template classes
 
 
 
